@@ -44,7 +44,7 @@ public class PrintOutConsole {
             }
         });
     }
-    // example for niezapominajka
+    // example output for niezapominajka
     /**
      *
      * @param order - map of orders when key is drugStore and value order
@@ -78,7 +78,7 @@ public class PrintOutConsole {
             }
         });
     }
-
+    // example output for Stylowa2
     public static void collectionDrugNameAndQtyByDrugStoreS (Map order) {
         Map<DrugStore, Order> orderMap = order;
 

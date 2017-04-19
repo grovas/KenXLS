@@ -21,7 +21,7 @@ public class App {
         FromTableToMap fromTableToMap = new FromTableToMap();
         Map<DrugStore, Order> orderMap = fromTableToMap.convertToMap();
 
-        // below some print out for test collection
+        // below some print out for test collections
         PrintOutConsole.collectionDrugStoreAndDrugNameByQty(orderMap);
         PrintOutConsole.collectionDrugStoreAndDrugNameByQtyN(orderMap);
         PrintOutConsole.collectionDrugStoreAndDrugNameByQtyS(orderMap);
