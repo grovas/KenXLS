@@ -9,8 +9,8 @@ import java.util.Map;
  * Different methods to print set of data
  */
 public class PrintOutConsole {
-    // example for medella file
 
+    // example for medella file
     /**
      *
      * @param order - map of orders when key is drugStore and value order

@@ -17,6 +17,10 @@ public class DrugStore {
         return storeName;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
     @Override
     public String toString() {
         return "DrugStore{" +
