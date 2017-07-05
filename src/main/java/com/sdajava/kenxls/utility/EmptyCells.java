@@ -12,8 +12,8 @@ public class EmptyCells {
     /**
      *
      * @param sheet - get active sheet
-     * @return sheet - and back sheet filled up with zeros against null cells
-     * Iterator jumps over empty cells so we need to handle this situation
+     * @return sheet - back sheet filled up with zeros against null cells
+     * Iterator ommits empty cells so we need to handle this situation
      *
      */
     public static XSSFSheet fillUpEmptyCells(XSSFSheet sheet){

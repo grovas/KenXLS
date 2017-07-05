@@ -1,46 +1,28 @@
 package com.sdajava.kenxls.utility;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.Iterator;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.util.CellReference;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
 public class ReadExcelFile {
 
-    //private static final String FILE_NAME = "medella.xlsx";
+    // uncomment one and only one file to proceed
+    private static final String FILE_NAME = "medella.xlsx";
     //private static final String FILE_NAME = "Stylowa2.xlsx";
-    private static final String FILE_NAME = "niezapominajka.xlsx";
+    //private static final String FILE_NAME = "niezapominajka.xlsx";
 
-    public static void main(String ar[]) {
-        ReadExcelFile rw = new ReadExcelFile();
-        rw.readDataFromExcel();
-
-    }
     // 2 dimmension array holds data from excel table
     Object[][] data = null;
-
-    /**
-     *
-     * @return reference to excel file
-     * @throws FileNotFoundException
-     */
-    public static File getFile() throws FileNotFoundException {
-        File file = new File(FILE_NAME);
-        return new File(file.getAbsolutePath());
-    }
 
     public Object[][] readDataFromExcel() {
         final DataFormatter df = new DataFormatter();
         try {
-
-            FileInputStream file = new FileInputStream(getFile());
+            FileInputStream file = new FileInputStream(FileService.getFileIn());
             //Create Workbook instance holding reference to .xlsx file
             XSSFWorkbook workbook = new XSSFWorkbook(file);
 
