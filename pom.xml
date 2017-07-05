@@ -8,27 +8,6 @@
     <artifactId>KenXLS</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-all</artifactId>
-            <scope>test</scope>
-            <version>1.9.5</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-            <version>4.12</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.hamcrest/java-hamcrest -->
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>java-hamcrest</artifactId>
-            <version>2.0.0.0</version>
-            <scope>test</scope>
-
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <dependency>
@@ -36,14 +15,11 @@
             <artifactId>poi</artifactId>
             <version>3.14</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.ant/ant -->
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>3.14</version>
         </dependency>
-
     </dependencies>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
